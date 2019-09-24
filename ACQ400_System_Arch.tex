@@ -1,0 +1,56 @@
+\documentclass[]{article}
+
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks,urlcolor=blue, linkcolor=black}
+\usepackage[tocentry, tablegrid]{vhistory}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{LastPage}
+\usepackage{lipsum}
+
+\geometry{a4paper,total={170mm,257mm},left=25mm,top=25mm,bottom=30mm}
+
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{Overleaf}
+\lhead{ACQ400 System Architecture}
+\lfoot{\textcopyright \space D-TACQ Solutions Ltd.}
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+%opening
+\title{ACQ400 System Architecture}
+\author{D-TACQ Solutions}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty} % This suppresses the page number on titlepage
+\begin{center}
+\includegraphics{images/dtacq_logo_new}
+\end{center}
+
+\begin{abstract}
+\lipsum[1-2]
+\end{abstract}
+
+\begin{versionhistory}
+	\vhEntry{1.0}{24/09/2019}{SR}{Created}
+%	\vhEntry{1.1}{23.01.04}{DP|JPW}{correction}
+%	\vhEntry{1.2}{03.02.04}{DP|JPW}{revised after review}
+\end{versionhistory}
+
+\pagebreak
+
+\tableofcontents
+
+\section{Introduction}
+\lipsum[1-3]
+
+\section{Section 1}
+\lipsum[1-2]
+\subsection{Subsection 1}
+\lipsum[1-2]
+
+\end{document}
