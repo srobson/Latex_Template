@@ -50,6 +50,16 @@
 \section{Introduction}
 \lipsum[1-3]
 
+\section{Preparing images for inclusion in Latex Doc}
+The best way to format figures for Latex is in .pdf form. Photographs can be .png or .jpg
+
+I've been exporting selections from OpenOffice draw as .svg then using the following procedure to convert this to a tightly cropped .pdf file.
+
+\begin{verbatim}
+$ sudo apt-get install librsvg2-bin
+$ rsvg-convert -f pdf -o t.pdf t.svg
+\end{verbatim}
+
 \section{Section 1}
 \lipsum[1-2]
 \subsection{Subsection 1}
